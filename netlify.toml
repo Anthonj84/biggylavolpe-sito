@@ -1,0 +1,43 @@
+[build]
+  publish = "."
+
+# URL senza .html: /inchieste/caso-salis funziona come /inchieste/caso-salis.html
+[build.processing]
+  skip_processing = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Le immagini hanno nomi stabili e non cambiano: si possono tenere in cache a lungo.
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# CSS e JS vanno riverificati a ogni visita, altrimenti una modifica non arriva
+# mai ai browser che hanno gia' scaricato il file (e' successo il 22/9/2026).
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# il modello articolo non deve essere raggiungibile online
+[[redirects]]
+  from = "/inchieste/_modello-articolo.html"
+  to = "/404.html"
+  status = 404

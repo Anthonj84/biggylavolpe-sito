@@ -1,0 +1,226 @@
+<!doctype html>
+<!--
+  ============================================================
+  MODELLO ARTICOLO — Biggy la Volpe
+  ============================================================
+  Come si usa:
+  1. Copia questo file in /inchieste/ con un nome-slug in minuscolo
+     e trattini, es. "prescrizione-chi-ci-guadagna.html".
+     NON pubblicare questo file: il nome inizia con "_" ed è escluso
+     dalla sitemap.
+  2. Sostituisci tutto quello che è scritto TRA-PARENTESI-QUADRE.
+  3. Aggiungi la voce in /inchieste/index.html, in /index.html
+     (sezione "Ultime inchieste") e in /sitemap.xml e /feed.xml.
+  4. Le date vanno in formato AAAA-MM-GG negli attributi datetime
+     e nei metadati, in italiano nel testo visibile.
+
+  Blocchi pronti da usare nel corpo (esempi più sotto):
+  - <div class="box">…</div>              riquadro redazionale (rosso)
+  - <div class="box box--nota">…</div>    nota tecnica (grigia)
+  - <div class="table-scroll"><table>…    tabella dati
+  - <blockquote>…<cite>…</cite>           citazione attribuita
+  - <span class="tag tag--dossier">Dossier</span>  etichetta rossa,
+    SOLO per inchieste verticali sulla condotta di una figura pubblica
+  ============================================================
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[TITOLO ARTICOLO] — Biggy la Volpe</title>
+<meta name="description" content="[SOMMARIO IN 150-160 CARATTERI: il fatto principale e il numero chiave. È quello che Google mostra sotto il titolo.]">
+<link rel="canonical" href="https://biggylavolpe.it/inchieste/[SLUG].html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Biggy la Volpe">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="[TITOLO ARTICOLO]">
+<meta property="og:description" content="[UNA FRASE CHE FA VENIRE VOGLIA DI APRIRE, diversa dalla description]">
+<meta property="og:url" content="https://biggylavolpe.it/inchieste/[SLUG].html">
+<meta property="og:image" content="https://biggylavolpe.it/assets/img/og-default.jpg">
+<meta property="article:published_time" content="[AAAA-MM-GG]">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Biggy la Volpe — inchieste" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="/assets/css/site-2.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "[TITOLO ARTICOLO]",
+  "description": "[SOMMARIO]",
+  "datePublished": "[AAAA-MM-GG]",
+  "inLanguage": "it-IT",
+  "author": { "@type": "Person", "name": "Anthonj Di Piro" },
+  "publisher": {
+    "@type": "NewsMediaOrganization",
+    "name": "Biggy la Volpe",
+    "url": "https://biggylavolpe.it/"
+  },
+  "mainEntityOfPage": "https://biggylavolpe.it/inchieste/[SLUG].html",
+  "articleSection": "[Dati | Politica | Geopolitica | Dossier]",
+  "citation": [
+    "[Ente, nome del documento, data]",
+    "[Testata, titolo, data]"
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Salta al contenuto</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="wordmark" href="/"><span class="wordmark__dot" aria-hidden="true"></span> Biggy la Volpe</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <nav class="nav" id="nav-principale" aria-label="Navigazione principale">
+      <a href="/">Home</a>
+      <a href="/inchieste/" aria-current="page">Inchieste</a>
+      <a href="/metodo.html">Metodo</a>
+      <a href="/media-kit.html">Media kit</a>
+      <a href="/contatti.html">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <article>
+    <header class="article-head">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light"><a href="/inchieste/" style="color:inherit; text-decoration:none;">Inchieste</a> · [SEZIONE]</p>
+        <h1>[TITOLO ARTICOLO]</h1>
+        <p class="lede">[OCCHIELLO: due o tre righe che dicono il fatto e perché non è quello che si crede. Niente domande retoriche.]</p>
+        <p class="article-meta">
+          <span>di <strong>Anthonj Di Piro</strong></span>
+          <span>Pubblicato il <time datetime="[AAAA-MM-GG]">[GG mese AAAA]</time></span>
+          <!-- aggiungere solo se l'articolo viene aggiornato:
+          <span>Aggiornato il <time datetime="[AAAA-MM-GG]">[GG mese AAAA]</time></span>
+          -->
+        </p>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div class="prose">
+
+        <p>[APERTURA. Il primo paragrafo prende il capolettera rosso in automatico: non iniziare con una data o con un numero, inizia con la frase che il lettore ha già sentito e che stai per smontare.]</p>
+
+        <h2>[PRIMO PASSAGGIO: il fatto documentato]</h2>
+
+        <p>[Corpo. Ogni numero con il suo perimetro: ente che lo pubblica, periodo, criterio di conteggio.]</p>
+
+        <!-- TABELLA DATI ------------------------------------------------ -->
+        <div class="table-scroll">
+          <table>
+            <caption>[Cosa mostra la tabella, con l'ente e la data del dato]</caption>
+            <thead>
+              <tr><th scope="col">[Voce]</th><th scope="col" class="num">[Valore]</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">[riga]</th><td class="num">[dato]</td></tr>
+              <tr class="is-highlight"><th scope="row">[riga da evidenziare]</th><td class="num">[dato]</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- NOTA TECNICA (grigia): usala per spiegare perché in giro
+             circolano numeri diversi, o cosa un dato NON dice ---------- -->
+        <div class="box box--nota">
+          <p class="box__title">[Titolo della nota]</p>
+          <p>[Testo della nota.]</p>
+        </div>
+
+        <h2>[SECONDO PASSAGGIO: il meccanismo]</h2>
+
+        <p>[Qui si spiega come funziona la cosa, non solo che è accaduta. È la parte che rende il pezzo citabile.]</p>
+
+        <!-- CITAZIONE: solo se rintracciabile in un atto, un comunicato
+             o una testata. Se non si trova, non va tra virgolette. ----- -->
+        <blockquote>
+          [Citazione letterale.]
+          <cite>[Chi, dove, data]</cite>
+        </blockquote>
+
+        <!-- RIQUADRO REDAZIONALE (rosso): cautele, precisazioni legali,
+             chi non è indagato, cosa è primo grado e cosa definitivo --- -->
+        <div class="box">
+          <p class="box__title">[Titolo del riquadro]</p>
+          <p>[Testo.]</p>
+        </div>
+
+        <h2>Il punto</h2>
+
+        <p>[La chiusura, ed è l'unico posto in cui sta la lettura editoriale. Va dichiarata come tale: «questa è la parte di lettura, e la firmiamo».]</p>
+
+        <div class="endnote">
+          <p>Se questo pezzo ti è stato utile, condividilo.</p>
+          <p>Le inchieste di Biggy la Volpe escono ogni sera alle 21 su Instagram, e in versione estesa qui. <a href="https://www.instagram.com/biggy_la_volpe/" rel="noopener" target="_blank">Segui il canale</a>.</p>
+        </div>
+
+        <!-- FONTI: obbligatorie. Ogni voce con ente o testata, nome del
+             documento, data e link. Nessun link inventato. ------------- -->
+        <section class="sources" aria-labelledby="fonti">
+          <h2 id="fonti">Fonti</h2>
+          <ol>
+            <li>[Ente], <em>[nome del documento]</em>, [data]. <a href="[URL]" rel="noopener" target="_blank">Documento</a></li>
+            <li>[Testata], <em>[titolo dell'articolo]</em>, [data]. <a href="[URL]" rel="noopener" target="_blank">Articolo</a></li>
+          </ol>
+          <p style="color:var(--text-faint); font-size:0.85rem;">[Nota metodologica: come sono calcolate le percentuali, quali fonti erano in contrasto e quale abbiamo seguito, se un procedimento è pendente.]</p>
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Biggy la Volpe</h2>
+        <p>Inchieste su politica, geopolitica e attualità italiana. Ogni dato con la sua fonte.</p>
+      </div>
+      <div>
+        <h2>Sezioni</h2>
+        <ul>
+          <li><a href="/inchieste/">Inchieste</a></li>
+          <li><a href="/metodo.html">Metodo e verifiche</a></li>
+          <li><a href="/media-kit.html">Media kit</a></li>
+          <li><a href="/contatti.html">Contatti e rettifiche</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Canali</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/biggy_la_volpe/" rel="me noopener" target="_blank">Instagram</a></li>
+          <li><a href="https://x.com/biggylavolpe" rel="me noopener" target="_blank">X</a></li>
+          <li><a href="/feed.xml">Feed RSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Scrivere</h2>
+        <ul>
+          <li><a href="mailto:biggylavolpe@gmail.com">biggylavolpe@gmail.com</a></li>
+          <li><a href="/contatti.html#rettifiche">Segnala un errore</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-anno>2026</span> Biggy la Volpe. Testi e grafiche originali.</span>
+      <span>Nessun partito. Nessuno escluso. Solo i fatti.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

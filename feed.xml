@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biggy la Volpe — inchieste</title>
+    <link>https://biggylavolpe.it/</link>
+    <description>Inchieste su politica, geopolitica e attualità italiana. Ogni dato con la sua fonte.</description>
+    <language>it-IT</language>
+    <atom:link href="https://biggylavolpe.it/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Tue, 22 Sep 2026 08:00:00 +0200</lastBuildDate>
+
+    <item>
+      <title>Gli sbarchi: i numeri veri</title>
+      <link>https://biggylavolpe.it/inchieste/sbarchi-i-numeri-veri.html</link>
+      <guid isPermaLink="true">https://biggylavolpe.it/inchieste/sbarchi-i-numeri-veri.html</guid>
+      <pubDate>Sat, 08 Aug 2026 21:00:00 +0200</pubDate>
+      <description>Il record storico degli sbarchi in Italia è del 2023: 157.651, il primo anno pieno del governo che prometteva il blocco navale. Il calo successivo riporta ai livelli del 2021 e il 2026 viaggia a meno 56%. Tutti i dati dal cruscotto del Viminale e dal Ministerio del Interior spagnolo.</description>
+    </item>
+
+    <item>
+      <title>Il caso Salis: una causa giusta gestita nel modo politicamente peggiore</title>
+      <link>https://biggylavolpe.it/inchieste/caso-salis.html</link>
+      <guid isPermaLink="true">https://biggylavolpe.it/inchieste/caso-salis.html</guid>
+      <pubDate>Fri, 07 Aug 2026 21:00:00 +0200</pubDate>
+      <description>Quindici mesi di custodia cautelare in Ungheria restano un'ingiustizia. Ma il seggio usato come scorciatoia alla diplomazia, l'immunità salvata per un voto e una condanna civile di primo grado in materia di lavoro sono un problema politico.</description>
+    </item>
+
+  </channel>
+</rss>
