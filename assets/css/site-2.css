@@ -827,3 +827,82 @@ tr.is-highlight td { font-weight: 700; color: var(--accent); }
   color: var(--text-faint);
   max-width: 60ch;
 }
+
+/* Invito alla newsletter in alto nella home: ha preso il posto dei contatori.
+   Due colonne da 900px in su, impilato sotto. */
+.cta-iscriviti {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid var(--border);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.cta-iscriviti h2 {
+  font-size: var(--step-2);
+  margin-block: 0.15em 0.4em;
+  text-wrap: balance;
+}
+.cta-iscriviti > div > p:last-child {
+  margin-bottom: 0;
+  color: var(--text-soft);
+  max-width: 46ch;
+}
+.cta-iscriviti .form { margin-block: 0; }
+@media (min-width: 900px) {
+  .cta-iscriviti {
+    grid-template-columns: 1.15fr 1fr;
+    max-width: 62rem;
+    margin-inline: auto;
+  }
+}
+
+/* ---------- Sezione collaborazioni (pagina contatti) ---------- */
+.collab .collab__intro { max-width: 46rem; }
+.collab .collab__intro h2 { margin-block-end: 0.5rem; }
+.collab__griglia {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-block-start: clamp(2rem, 5vw, 3rem);
+}
+@media (min-width: 960px) {
+  .collab__griglia { grid-template-columns: 1fr 1.05fr; align-items: start; }
+}
+.collab__titolo {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-block: 0 0.75rem;
+}
+.collab__titolo + ul { margin-block: 0 2rem; padding-inline-start: 1.15rem; }
+.collab__cosa ul { color: #c3cfda; max-width: 46ch; }
+.collab__cosa li { margin-block-end: 0.7rem; line-height: 1.55; }
+.collab__cosa li strong { color: #fff; }
+.collab__no { list-style: none; padding-inline-start: 0 !important; }
+.collab__no li { position: relative; padding-inline-start: 1.5rem; }
+.collab__no li::before {
+  content: "—";
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* modulo a due colonne, piu' largo di quello standard */
+.form--largo { max-width: 40rem; margin-top: 0; }
+.form__coppia { display: grid; gap: 0.9rem; }
+@media (min-width: 560px) {
+  .form__coppia { grid-template-columns: 1fr 1fr; }
+}
+.newsletter .form select {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: #33475c;
+  color: #fff;
+}
+.newsletter .form select option { background: var(--navy-900); color: #fff; }
+.newsletter .form select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }

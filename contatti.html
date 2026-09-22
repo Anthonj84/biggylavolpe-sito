@@ -63,8 +63,8 @@
         <article class="card">
           <p class="card__meta"><span class="tag">Collaborazioni</span></p>
           <h3>Proposte editoriali e sponsor</h3>
-          <p>Editoria, cultura, eventi, formazione, ricerca. Le condizioni e i formati sono nel media kit.</p>
-          <a class="card__more" href="/media-kit.html">Vedi il media kit →</a>
+          <p>Aziende, editoria, cultura, eventi, formazione, ricerca. Compila il modulo qui sotto: ti arrivano dati aggiornati, formati e prezzi.</p>
+          <a class="card__more" href="#collabora">Compila il modulo →</a>
         </article>
 
         <article class="card">
@@ -74,6 +74,96 @@
           <a class="card__more" href="mailto:biggylavolpe@gmail.com?subject=Stampa">Scrivi →</a>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter collab" id="collabora">
+    <div class="wrap">
+      <div class="collab__intro">
+        <p class="eyebrow eyebrow--light">Collaborazioni</p>
+        <h2>Vuoi lavorare con Biggy la Volpe?</h2>
+        <p>Aziende, case editrici, testate, festival, università, enti di ricerca, altri creator. Scrivi qui cosa hai in mente: rispondiamo a tutti, anche per dire no.</p>
+      </div>
+
+      <div class="collab__griglia">
+        <div class="collab__cosa">
+          <p class="collab__titolo">Cosa ti arriva in risposta</p>
+          <ul>
+            <li><strong>I dati di audience aggiornati</strong> alla settimana in corso, con lo screenshot delle statistiche di Instagram allegato. Niente cifre tonde, niente stime.</li>
+            <li><strong>I formati disponibili e i prezzi</strong>: carosello sponsorizzato, inchiesta commissionata su un tema, presenza in un reel, interventi e docenze, licenza per ripubblicare un'inchiesta.</li>
+            <li><strong>Le collaborazioni già fatte</strong> e, dove il partner ha dato l'ok, i numeri che hanno prodotto.</li>
+            <li><strong>I tempi reali</strong> di produzione, che non sono quarantott'ore: un pezzo verificato richiede giorni di lavoro sulle fonti.</li>
+          </ul>
+
+          <p class="collab__titolo">Tre cose che non si negoziano</p>
+          <ul class="collab__no">
+            <li>Nessun contenuto sponsorizzato viene pubblicato senza che sia dichiarato come tale, in modo visibile, nella prima riga.</li>
+            <li>Nessun dato entra in un contenuto se non è verificato su fonte pubblica, nemmeno se lo fornisce il partner.</li>
+            <li>Nessun codice referral, nessun prodotto finanziario, nessun integratore, nessuna campagna di partito.</li>
+          </ul>
+        </div>
+
+        <form class="form form--largo" name="collaborazioni" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/grazie.html">
+          <p class="hp"><label>Non compilare questo campo <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+          <div class="form__coppia">
+            <div>
+              <label for="c-nome">Nome e cognome</label>
+              <input id="c-nome" type="text" name="nome" required autocomplete="name">
+            </div>
+            <div>
+              <label for="c-ruolo">Ruolo</label>
+              <input id="c-ruolo" type="text" name="ruolo" autocomplete="organization-title" placeholder="Es. responsabile marketing">
+            </div>
+          </div>
+
+          <div class="form__coppia">
+            <div>
+              <label for="c-org">Azienda, testata o ente</label>
+              <input id="c-org" type="text" name="organizzazione" required autocomplete="organization">
+            </div>
+            <div>
+              <label for="c-sito">Sito o profilo</label>
+              <input id="c-sito" type="url" name="sito" placeholder="https://">
+            </div>
+          </div>
+
+          <div class="form__coppia">
+            <div>
+              <label for="c-email">Email</label>
+              <input id="c-email" type="email" name="email" required autocomplete="email">
+            </div>
+            <div>
+              <label for="c-tipo">Tipo di collaborazione</label>
+              <select id="c-tipo" name="tipo" required>
+                <option value="">Scegli…</option>
+                <option>Contenuto sponsorizzato</option>
+                <option>Collaborazione editoriale o co-produzione</option>
+                <option>Intervista o ospitata</option>
+                <option>Evento, festival, presentazione</option>
+                <option>Formazione, docenza, workshop</option>
+                <option>Ricerca, dati, think tank</option>
+                <option>Licenza per ripubblicare un'inchiesta</option>
+                <option>Altro</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="c-tempi">Quando</label>
+            <input id="c-tempi" type="text" name="tempi" placeholder="Es. entro novembre, oppure nessuna scadenza">
+          </div>
+
+          <div>
+            <label for="c-msg">Cosa hai in mente</label>
+            <textarea id="c-msg" name="messaggio" required placeholder="Di cosa si tratta, su quali canali, e — se ce l'hai — il budget indicativo. Più sei preciso, più la risposta è utile."></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Invia la richiesta</button>
+          <p class="form-nota">I dati servono solo a risponderti e non vengono cedati a nessuno. Se preferisci la mail diretta: <a href="mailto:biggylavolpe@gmail.com?subject=Collaborazione" style="color:#c3cfda;">biggylavolpe@gmail.com</a>. <a href="/privacy.html" style="color:#c3cfda;">Come trattiamo i dati</a>.</p>
+        </form>
       </div>
     </div>
   </section>
@@ -184,6 +274,7 @@
         <ul>
           <li><a href="mailto:biggylavolpe@gmail.com">biggylavolpe@gmail.com</a></li>
           <li><a href="/contatti.html#rettifiche">Segnala un errore</a></li>
+          <li><a href="/contatti.html#collabora">Collabora con noi</a></li>
           <li><a href="/privacy.html">Privacy</a></li>
         </ul>
       </div>

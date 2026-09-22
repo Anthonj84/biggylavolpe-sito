@@ -74,11 +74,20 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="stats reveal">
-        <div class="stat"><span class="stat__num">50.000+</span><span class="stat__label">Follower su Instagram</span></div>
-        <div class="stat"><span class="stat__num">2 mln+</span><span class="stat__label">Visualizzazioni sul catalogo</span></div>
-        <div class="stat"><span class="stat__num">1 al giorno</span><span class="stat__label">Un contenuto ogni sera alle 21</span></div>
-        <div class="stat"><span class="stat__num">0</span><span class="stat__label">Dati pubblicati senza fonte</span></div>
+      <div class="cta-iscriviti reveal">
+        <div>
+          <p class="eyebrow">Newsletter</p>
+          <h2>Ricevi le inchieste per mail</h2>
+          <p>Un messaggio quando esce un pezzo lungo, con i documenti già linkati. Niente pubblicità, niente cessione del tuo indirizzo, cancellazione con un clic.</p>
+        </div>
+        <form class="form form--riga" name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/grazie.html">
+          <p class="hp"><label>Non compilare questo campo <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div>
+            <label for="email-top">La tua email</label>
+            <input id="email-top" type="email" name="email" required autocomplete="email" placeholder="nome@esempio.it">
+          </div>
+          <button class="btn btn--primary" type="submit" style="align-self:end;">Iscriviti</button>
+        </form>
       </div>
     </div>
   </section>
@@ -218,6 +227,7 @@
         <ul>
           <li><a href="mailto:biggylavolpe@gmail.com">biggylavolpe@gmail.com</a></li>
           <li><a href="/contatti.html#rettifiche">Segnala un errore</a></li>
+          <li><a href="/contatti.html#collabora">Collabora con noi</a></li>
           <li><a href="/privacy.html">Privacy</a></li>
         </ul>
       </div>
