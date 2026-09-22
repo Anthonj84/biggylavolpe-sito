@@ -4,5 +4,3 @@ Disallow: /inchieste/_modello-articolo.html
 Disallow: /grazie.html
 
 Sitemap: https://biggylavolpe.it/sitemap.xml
-
-# pubblicato da git: 090706
