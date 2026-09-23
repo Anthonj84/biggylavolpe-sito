@@ -906,3 +906,52 @@ tr.is-highlight td { font-weight: 700; color: var(--accent); }
 }
 .newsletter .form select option { background: var(--navy-900); color: #fff; }
 .newsletter .form select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* ---------- Condivisione articolo ---------- */
+.condividi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-block: 2.5rem 0;
+  padding-block-start: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--sans);
+}
+.condividi__etichetta {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0.4rem 0 0;
+}
+.condividi a, .condividi button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+.condividi a:hover, .condividi button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.condividi svg { width: 1em; height: 1em; fill: currentColor; }
+.condividi__esito {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .condividi__etichetta { flex-basis: 100%; margin-bottom: 0.2rem; }
+}

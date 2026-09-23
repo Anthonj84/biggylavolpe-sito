@@ -55,3 +55,35 @@
     anno[i].textContent = String(new Date().getFullYear());
   }
 })();
+
+/* Copia link negli appunti, con ripiego se l'API non è disponibile
+   (contesti non sicuri o browser che la bloccano). */
+document.querySelectorAll('[data-condividi]').forEach(function (box) {
+  var btn = box.querySelector('[data-copia]');
+  var esito = box.querySelector('[data-esito]');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var url = location.href.split('#')[0];
+    function fatto() {
+      if (!esito) return;
+      esito.hidden = false;
+      setTimeout(function () { esito.hidden = true; }, 2500);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(fatto).catch(ripiego);
+    } else {
+      ripiego();
+    }
+    function ripiego() {
+      var t = document.createElement('textarea');
+      t.value = url;
+      t.setAttribute('readonly', '');
+      t.style.position = 'absolute';
+      t.style.left = '-9999px';
+      document.body.appendChild(t);
+      t.select();
+      try { document.execCommand('copy'); fatto(); } catch (e) { /* niente da fare */ }
+      t.remove();
+    }
+  });
+});
