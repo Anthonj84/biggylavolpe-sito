@@ -41,3 +41,9 @@
   from = "/inchieste/_modello-articolo.html"
   to = "/404.html"
   status = 404
+
+# il pezzo del 23/9 ha cambiato titolo e indirizzo poche ore dopo la pubblicazione
+[[redirects]]
+  from = "/inchieste/tipo-zero.html"
+  to = "/inchieste/stiamo-costruendo-dio.html"
+  status = 301
