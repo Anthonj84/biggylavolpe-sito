@@ -2,5 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /inchieste/_modello-articolo.html
 Disallow: /grazie.html
+Disallow: /grazie-newsletter.html
+Disallow: /grazie-segnalazione.html
+Disallow: /grazie-collaborazione.html
 
 Sitemap: https://biggylavolpe.it/sitemap.xml

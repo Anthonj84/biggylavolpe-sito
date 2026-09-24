@@ -977,3 +977,20 @@ tr.is-highlight td { font-weight: 700; color: var(--accent); }
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* ---------- Figure negli articoli ---------- */
+.figura { margin-block: 2.75rem; }
+.figura img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--navy-900);
+}
+.figura figcaption {
+  margin-block-start: 0.7rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+.figura figcaption span { display: block; margin-block-start: 0.2rem; font-size: 0.76rem; }
