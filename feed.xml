@@ -6,7 +6,15 @@
     <description>Inchieste su politica, geopolitica e attualità italiana. Ogni dato con la sua fonte.</description>
     <language>it-IT</language>
     <atom:link href="https://biggylavolpe.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 22 Sep 2026 08:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 18:30:00 +0200</lastBuildDate>
+
+    <item>
+      <title>Le parole sequestrate: come l'algoritmo ha diviso ciò che una volta era di tutti</title>
+      <link>https://biggylavolpe.it/inchieste/parole-sequestrate.html</link>
+      <guid isPermaLink="true">https://biggylavolpe.it/inchieste/parole-sequestrate.html</guid>
+      <pubDate>Sat, 26 Sep 2026 18:30:00 +0200</pubDate>
+      <description>L'ambiente lo fondò un presidente repubblicano, la libertà di parola in tribunale la difesero avvocati dell'ACLU nel caso Skokie del 1977: oggi entrambe le bandiere sono passate al campo opposto. Nove casi, dagli Stati Uniti (Patriot Act, dazi, Cambridge Analytica) all'Italia (Turco-Napolitano, memorandum Minniti, legge anti-caporalato), su come l'algoritmo dei social premia chi marchia un tema con un colore politico invece di discuterlo nel merito.</description>
+    </item>
 
     <item>
       <title>Stiamo costruendo Dio, e non è a nostra immagine e somiglianza</title>
