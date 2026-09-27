@@ -6,7 +6,15 @@
     <description>Inchieste su politica, geopolitica e attualità italiana. Ogni dato con la sua fonte.</description>
     <language>it-IT</language>
     <atom:link href="https://biggylavolpe.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 26 Sep 2026 18:30:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 12:00:00 +0200</lastBuildDate>
+
+        <item>
+      <title>L'Italia, la patria del Rinascimento, è tra le ultime in Europa per l'istruzione</title>
+      <link>https://biggylavolpe.it/inchieste/istruzione-patria-del-rinascimento.html</link>
+      <guid isPermaLink="true">https://biggylavolpe.it/inchieste/istruzione-patria-del-rinascimento.html</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 +0200</pubDate>
+      <description>Eurostat: l'istruzione vale l'8,0% della spesa pubblica italiana, la quota più bassa d'Europa. A scuola si spende nella media, ma università e competenze degli adulti frenano da vent'anni, sotto governi di ogni colore, con la scelta tra liceo e professionale che a tredici anni segue ancora il titolo di studio dei genitori.</description>
+    </item>
 
     <item>
       <title>Le parole sequestrate: come l'algoritmo ha diviso ciò che una volta era di tutti</title>
