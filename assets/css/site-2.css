@@ -994,3 +994,34 @@ tr.is-highlight td { font-weight: 700; color: var(--accent); }
   color: var(--text-faint);
 }
 .figura figcaption span { display: block; margin-block-start: 0.2rem; font-size: 0.76rem; }
+
+/* ---------- Banner cookie (Consent Mode v2) ---------- */
+#cookie-banner {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 999;
+  background: var(--navy-900);
+  color: #fff;
+  border-top: 1px solid #253242;
+  padding: 1rem;
+}
+.cookie-banner__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--sans);
+}
+.cookie-banner__inner p {
+  flex: 1 1 320px;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cdd6df;
+}
+.cookie-banner__azioni {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
