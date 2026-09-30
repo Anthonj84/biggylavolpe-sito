@@ -18,6 +18,7 @@ export default async (req) => {
   const title = url.searchParams.get("title");
   const link = url.searchParams.get("link");
   const excerpt = url.searchParams.get("excerpt") || "";
+  const only = (url.searchParams.get("only") || "").trim().toLowerCase();
   if (!title || !link) {
     return new Response("Parametri mancanti: title, link (excerpt opzionale)", { status: 400 });
   }
@@ -36,11 +37,19 @@ export default async (req) => {
     return new Response(`Errore Netlify API (${subsRes.status}) leggendo gli iscritti`, { status: 502 });
   }
   const submissions = await subsRes.json();
-  const emails = [...new Set(
+  const allEmails = [...new Set(
     submissions
       .map((s) => (s.data && s.data.email ? String(s.data.email) : "").trim().toLowerCase())
       .filter((e) => e && e.includes("@"))
   )];
+
+  let emails = allEmails;
+  if (only) {
+    if (!allEmails.includes(only)) {
+      return new Response(`L'indirizzo ${only} non risulta tra gli iscritti al form newsletter`, { status: 404 });
+    }
+    emails = [only];
+  }
 
   const results = [];
   for (const email of emails) {
@@ -58,6 +67,7 @@ export default async (req) => {
       </div>`;
 
     let sendRes;
+    let bodyText = "";
     try {
       sendRes = await fetch("https://api.resend.com/emails", {
         method: "POST",
@@ -73,7 +83,10 @@ export default async (req) => {
           headers: { "List-Unsubscribe": `<${unsubUrl}>` },
         }),
       });
-      results.push({ email, ok: sendRes.ok, status: sendRes.status });
+      if (!sendRes.ok) {
+        try { bodyText = await sendRes.text(); } catch (_) {}
+      }
+      results.push({ email, ok: sendRes.ok, status: sendRes.status, error: sendRes.ok ? undefined : bodyText });
     } catch (err) {
       results.push({ email, ok: false, error: String(err) });
     }
