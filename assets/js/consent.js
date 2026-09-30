@@ -59,8 +59,8 @@
       '<div class="cookie-banner__inner">' +
       '<p>Usiamo cookie di analisi per capire cosa funziona. Solo con il tuo consenso.</p>' +
       '<div class="cookie-banner__azioni">' +
-      '<button type="button" class="btn btn--ghost" data-cookie-rifiuta>Rifiuta</button>' +
-      '<button type="button" class="btn btn--primary" data-cookie-accetta>Accetta</button>' +
+      '<button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-cookie-rifiuta>Rifiuta</button>' +
+      '<button type="button" class="cookie-banner__btn cookie-banner__btn--pieno" data-cookie-accetta>Accetta</button>' +
       '</div></div>';
     document.body.appendChild(box);
 
