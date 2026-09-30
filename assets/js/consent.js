@@ -57,7 +57,7 @@
     box.setAttribute("aria-label", "Preferenze cookie");
     box.innerHTML =
       '<div class="cookie-banner__inner">' +
-      '<p>Usiamo Google Analytics per capire quali inchieste vengono lette e da dove arrivano i visitatori. Si attiva solo se accetti.</p>' +
+      '<p>Usiamo cookie di analisi per capire cosa funziona. Solo con il tuo consenso.</p>' +
       '<div class="cookie-banner__azioni">' +
       '<button type="button" class="btn btn--ghost" data-cookie-rifiuta>Rifiuta</button>' +
       '<button type="button" class="btn btn--primary" data-cookie-accetta>Accetta</button>' +
